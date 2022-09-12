@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.title--hero {
+  font-size: 36px;
+  line-height: 1;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.hidden {
+  background: #ef8774;
+  opacity: 0.5;
+  text-decoration: line-through;
+  box-shadow: none;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #fff;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 22px;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 22px;
+}
+
+.pill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f4f4f4;
+  width: 40px;
+  height: 15px;
+  border-radius: 2px;
+  color: #ef8774;
+  font-size: 8px;
+  font-weight: 700;
+}

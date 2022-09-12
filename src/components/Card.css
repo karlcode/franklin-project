@@ -1,0 +1,16 @@
+.Card {
+  display: flex;
+  gap: 10px;
+  background: linear-gradient(85.5deg, #eb5a52 1.03%, #f7cd98 101.63%);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+
+.Card__content {
+  display: flex;
+  flex-grow: 1;
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
+}

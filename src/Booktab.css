@@ -1,0 +1,83 @@
+.BookTab {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  height: 588px;
+  width: 270px;
+  background-color: #eb5a52;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 30px;
+  overflow-y: scroll;
+}
+
+.BookTab__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.BookTab__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 30px;
+}
+
+.Popout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 475px;
+  background-color: #eb5a52;
+  border-radius: 5px;
+  padding: 32px;
+  gap: 26px;
+  text-align: start;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.Popout__hero {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 263px;
+  background-repeat: no-repeat;
+}
+
+.Popout__hero--title {
+  grid-column: 2 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.Popout__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Reset {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: #f7cd98;
+  cursor: pointer;
+}
+
+.Reset__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 24px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(85.5deg, #eb5a52 1.03%, #f7cd98 101.63%);
+}
